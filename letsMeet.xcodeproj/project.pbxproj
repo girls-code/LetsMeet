@@ -14,6 +14,7 @@
 		445C24B82125F2F300955FAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 445C24B62125F2F300955FAF /* LaunchScreen.storyboard */; };
 		445C24C32125F2F400955FAF /* letsMeetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445C24C22125F2F400955FAF /* letsMeetTests.swift */; };
 		445C24CE2125F2F400955FAF /* letsMeetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445C24CD2125F2F400955FAF /* letsMeetUITests.swift */; };
+		445C24DC212A6B0500955FAF /* KimAndJoyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445C24DB212A6B0500955FAF /* KimAndJoyViewController.swift */; };
 		455E396ECA7BFD5754B2DE7C /* Pods_letsMeet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71B40AD442F6FD027B8CE89A /* Pods_letsMeet.framework */; };
 		8D2758661A9BD33BC9DB9A1C /* Pods_letsMeetUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE53E8811A31232CEFA8A62C /* Pods_letsMeetUITests.framework */; };
 		CCC1192FDCE106C40DA17E9C /* Pods_letsMeetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C5CA48490573563860A2BA /* Pods_letsMeetTests.framework */; };
@@ -52,6 +53,7 @@
 		445C24C92125F2F400955FAF /* letsMeetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = letsMeetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		445C24CD2125F2F400955FAF /* letsMeetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = letsMeetUITests.swift; sourceTree = "<group>"; };
 		445C24CF2125F2F400955FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		445C24DB212A6B0500955FAF /* KimAndJoyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KimAndJoyViewController.swift; sourceTree = "<group>"; };
 		71B40AD442F6FD027B8CE89A /* Pods_letsMeet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_letsMeet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C8926E1F13A5EFF6BC5852 /* Pods-letsMeet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-letsMeet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-letsMeet/Pods-letsMeet.debug.xcconfig"; sourceTree = "<group>"; };
 		76C5CA48490573563860A2BA /* Pods_letsMeetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_letsMeetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +122,7 @@
 				445C24B42125F2F300955FAF /* Assets.xcassets */,
 				445C24B62125F2F300955FAF /* LaunchScreen.storyboard */,
 				445C24B92125F2F300955FAF /* Info.plist */,
+				445C24DB212A6B0500955FAF /* KimAndJoyViewController.swift */,
 			);
 			path = letsMeet;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				445C24DC212A6B0500955FAF /* KimAndJoyViewController.swift in Sources */,
 				445C24B02125F2F200955FAF /* ViewController.swift in Sources */,
 				445C24AE2125F2F200955FAF /* AppDelegate.swift in Sources */,
 			);
