@@ -125,8 +125,8 @@
 				446EE9592139B85200F639AA /* ViewControllers */,
 				446EE9582139B83B00F639AA /* Models */,
 				445C24AD2125F2F200955FAF /* AppDelegate.swift */,
-				445C24B12125F2F200955FAF /* Main.storyboard */,
 				445C24B42125F2F300955FAF /* Assets.xcassets */,
+				445C24B12125F2F200955FAF /* Main.storyboard */,
 				445C24B62125F2F300955FAF /* LaunchScreen.storyboard */,
 				445C24B92125F2F300955FAF /* Info.plist */,
 			);
