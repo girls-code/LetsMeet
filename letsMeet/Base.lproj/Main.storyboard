@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Kim And Joy View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="KimAndJoyViewController" customModule="letsMeet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="letsMeet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,23 +32,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FEE-Y8-ix6">
-                                <rect key="frame" x="129" y="369" width="116" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Login">
-                                            <attributes>
-                                                <font key="NSFont" metaFont="system" size="15"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <segue destination="rfx-Pu-cMy" kind="show" id="0e0-wr-T0B"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Logo_name" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IOC-fr-NHz">
                                 <rect key="frame" x="145" y="99" width="85" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -73,20 +56,43 @@
                                     <segue destination="jOu-pa-s7n" kind="show" id="wEB-om-5vR"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FEE-Y8-ix6">
+                                <rect key="frame" x="151" y="394" width="64" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Login">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="15"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="didTapLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cPB-gF-rLC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="didTapLogin" destination="FEE-Y8-ix6" id="8Da-n2-a7B"/>
+                        <outlet property="loginBtn" destination="FEE-Y8-ix6" id="y5t-Sk-htc"/>
+                        <outlet property="passwordField" destination="PEQ-Sf-vzu" id="zqn-Yo-ypo"/>
+                        <outlet property="usernameField" destination="X6E-lD-G3d" id="xco-b4-SRH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="orT-QZ-3RU"/>
             </objects>
             <point key="canvasLocation" x="669.60000000000002" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="qVa-IZ-gUv">
             <objects>
-                <viewController id="jOu-pa-s7n" sceneMemberID="viewController">
+                <viewController id="jOu-pa-s7n" customClass="SignUpViewController" customModule="letsMeet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jfx-zn-VWb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,13 +106,6 @@
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="SIgn_up_password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MCH-p5-8ON">
                                 <rect key="frame" x="121" y="307" width="158" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Re-enter_password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VJm-d7-oa4">
-                                <rect key="frame" x="121" y="374" width="158" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -131,13 +130,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="confirm"/>
                                 <connections>
-                                    <segue destination="rfx-Pu-cMy" kind="show" id="lIr-AD-7WY"/>
+                                    <action selector="didTapSignUp:" destination="jOu-pa-s7n" eventType="touchUpInside" id="LOU-ro-7tt"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="XWR-HH-LPx"/>
                     </view>
+                    <connections>
+                        <outlet property="passwordField" destination="MCH-p5-8ON" id="evd-nF-47X"/>
+                        <outlet property="usernameField" destination="s9m-JM-e4I" id="J1j-gj-zCo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZjD-8X-rpO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -146,8 +149,7 @@
         <!--Main View Controller-->
         <scene sceneID="ANt-eB-gPc">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SGc-Iz-33M" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="rfx-Pu-cMy" customClass="MainViewController" customModule="letsMeet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainViewController" id="rfx-Pu-cMy" customClass="MainViewController" customModule="letsMeet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mtu-S8-A1C">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -191,6 +193,7 @@
                         <outlet property="MapImageView" destination="eqj-iZ-dDm" id="Ttn-jW-mQ0"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SGc-Iz-33M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1397.5999999999999" y="793.8530734632684"/>
         </scene>
@@ -572,6 +575,5 @@
         <segue reference="3Fn-P2-MqQ"/>
         <segue reference="1FQ-Sl-DJs"/>
         <segue reference="e68-HL-oyR"/>
-        <segue reference="2PJ-V6-epH"/>
     </inferredMetricsTieBreakers>
 </document>
