@@ -9,6 +9,7 @@
 import UIKit
 import Parse
 
+<<<<<<< HEAD
 class Event {
     var createdBy: PFUser
     var dateOfEvent: Date
@@ -24,5 +25,10 @@ class Event {
         self.locationEvent = locationEvent
         
     }
+=======
+
+class Event: PFObject {
+
+>>>>>>> c7053c4801aba729757b8bf95630374d8c0a267e
 }
 
