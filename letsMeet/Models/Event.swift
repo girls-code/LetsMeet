@@ -9,6 +9,8 @@
 import UIKit
 import Parse
 
-class Event: PFUser {
+
+class Event: PFObject {
 
 }
+

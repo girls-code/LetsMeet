@@ -13,7 +13,7 @@ class SignUpViewController: UIViewController {
 
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-    
+    @IBOutlet weak var confirmPasswordField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +41,10 @@ class SignUpViewController: UIViewController {
         }
     }
     
-
+    @IBAction func didTapLoginFromSignUp(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil);
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
