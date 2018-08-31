@@ -21,8 +21,6 @@ class User: PFUser {
     @NSManaged var followers:[String] //we can save an array of user's id's, not the whole user objects lol
     @NSManaged var events:[Event]
     
-   
-    
 
     override init() {
         super.init()

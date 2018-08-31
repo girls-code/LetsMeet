@@ -9,6 +9,20 @@
 import UIKit
 import Parse
 
-class Event: PFUser {
-
+class Event {
+    var createdBy: PFUser
+    var dateOfEvent: Date
+    var description: String
+    var typeOfEvent: String
+    var locationEvent: CLLocation
+    
+    init(createdBy: PFUser, dateOfEvent: Date, description: String, typeOfEvent: String, locationEvent: CLLocation) {
+        self.createdBy = createdBy
+        self.dateOfEvent = dateOfEvent
+        self.description = description
+        self.typeOfEvent = typeOfEvent
+        self.locationEvent = locationEvent
+        
+    }
 }
+
