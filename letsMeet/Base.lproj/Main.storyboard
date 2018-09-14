@@ -127,10 +127,10 @@
             </objects>
             <point key="canvasLocation" x="1406" y="134"/>
         </scene>
-        <!--Main View Controller-->
+        <!--View Controller-->
         <scene sceneID="ANt-eB-gPc">
             <objects>
-                <viewController storyboardIdentifier="mainViewController" id="rfx-Pu-cMy" customClass="MainViewController" customModule="letsMeet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rfx-Pu-cMy" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mtu-S8-A1C">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -170,9 +170,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="nuS-y0-YPv"/>
                     </view>
-                    <connections>
-                        <outlet property="MapImageView" destination="eqj-iZ-dDm" id="Ttn-jW-mQ0"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SGc-Iz-33M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -525,9 +522,79 @@
             <point key="canvasLocation" x="692" y="2332.9835082458771"/>
         </scene>
         <!--Main View Controller-->
+        <scene sceneID="Vch-gg-Z1Q">
+            <objects>
+                <viewController storyboardIdentifier="mainViewController" id="oQj-RV-pb5" customClass="MainViewController" customModule="letsMeet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VLB-LX-fze">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cXr-qe-OG0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="582"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventListCell" rowHeight="141" id="GpU-ws-M7C">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="141"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GpU-ws-M7C" id="IL5-1s-M3R">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="140.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QTe-NU-DoQ">
+                                                    <rect key="frame" x="15" y="18" width="78" height="77"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.77556266190000001" green="0.25493670940000002" blue="0.13362838069999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Event Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tcp-SV-Xwh">
+                                                    <rect key="frame" x="120" y="18" width="85" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmY-hL-RX4">
+                                                    <rect key="frame" x="120" y="40" width="50" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="# of people" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6R-Xt-ShV">
+                                                    <rect key="frame" x="120" y="98" width="87" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wD2-y1-7Tu">
+                                                    <rect key="frame" x="120" y="69" width="66" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="d4A-ho-P8A"/>
+                    </view>
+                    <connections>
+                        <outlet property="eventsTableView" destination="cXr-qe-OG0" id="ehG-8k-vnt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NYb-WE-iAv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="669.60000000000002" y="3123.6881559220392"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tCL-YW-HOq">
             <objects>
-                <viewController id="01b-ts-xKY" customClass="MainViewController" customModule="letsMeet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="01b-ts-xKY" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fwF-Wq-9lV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -818,6 +885,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="t3F-Wg-I7I"/>
         <segue reference="1FQ-Sl-DJs"/>
-        <segue reference="EK9-Qb-M8R"/>
+        <segue reference="CYQ-zi-LqW"/>
     </inferredMetricsTieBreakers>
 </document>

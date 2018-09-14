@@ -9,26 +9,22 @@
 import UIKit
 import Parse
 
-<<<<<<< HEAD
-class Event {
-    var createdBy: PFUser
-    var dateOfEvent: Date
-    var description: String
-    var typeOfEvent: String
-    var locationEvent: CLLocation
+class Event: PFObject {
+    @NSManaged var createdBy: User
+    @NSManaged var dateOfEvent: Date
+    @NSManaged var eventDescription: String
+    @NSManaged var typeOfEvent: String
+    @NSManaged var locationEvent: CLLocation
     
-    init(createdBy: PFUser, dateOfEvent: Date, description: String, typeOfEvent: String, locationEvent: CLLocation) {
+    init(createdBy: User, dateOfEvent: Date, eventDescription: String, typeOfEvent: String, locationEvent: CLLocation) {
+        super.init()
         self.createdBy = createdBy
         self.dateOfEvent = dateOfEvent
-        self.description = description
+        self.eventDescription = eventDescription
         self.typeOfEvent = typeOfEvent
         self.locationEvent = locationEvent
         
     }
-=======
 
-class Event: PFObject {
-
->>>>>>> c7053c4801aba729757b8bf95630374d8c0a267e
 }
 

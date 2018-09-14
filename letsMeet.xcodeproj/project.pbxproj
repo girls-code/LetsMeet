@@ -18,6 +18,7 @@
 		446EE9552139B3A900F639AA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446EE9542139B3A900F639AA /* User.swift */; };
 		446EE95B2139B8B700F639AA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446EE95A2139B8B700F639AA /* SignUpViewController.swift */; };
 		446EE95D2139CDB300F639AA /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446EE95C2139CDB300F639AA /* Event.swift */; };
+		446EE9602139DC6900F639AA /* EventListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446EE95F2139DC6900F639AA /* EventListCell.swift */; };
 		455E396ECA7BFD5754B2DE7C /* Pods_letsMeet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71B40AD442F6FD027B8CE89A /* Pods_letsMeet.framework */; };
 		8D2758661A9BD33BC9DB9A1C /* Pods_letsMeetUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE53E8811A31232CEFA8A62C /* Pods_letsMeetUITests.framework */; };
 		CCC1192FDCE106C40DA17E9C /* Pods_letsMeetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C5CA48490573563860A2BA /* Pods_letsMeetTests.framework */; };
@@ -60,6 +61,7 @@
 		446EE9542139B3A900F639AA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		446EE95A2139B8B700F639AA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		446EE95C2139CDB300F639AA /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		446EE95F2139DC6900F639AA /* EventListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListCell.swift; sourceTree = "<group>"; };
 		71B40AD442F6FD027B8CE89A /* Pods_letsMeet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_letsMeet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C8926E1F13A5EFF6BC5852 /* Pods-letsMeet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-letsMeet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-letsMeet/Pods-letsMeet.debug.xcconfig"; sourceTree = "<group>"; };
 		76C5CA48490573563860A2BA /* Pods_letsMeetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_letsMeetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +124,7 @@
 		445C24AC2125F2F200955FAF /* letsMeet */ = {
 			isa = PBXGroup;
 			children = (
+				446EE95E2139DC3800F639AA /* Views */,
 				446EE9592139B85200F639AA /* ViewControllers */,
 				446EE9582139B83B00F639AA /* Models */,
 				445C24AD2125F2F200955FAF /* AppDelegate.swift */,
@@ -168,6 +171,14 @@
 				446EE95A2139B8B700F639AA /* SignUpViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		446EE95E2139DC3800F639AA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				446EE95F2139DC6900F639AA /* EventListCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		66DE80774D57B628A3CD9821 /* Pods */ = {
@@ -406,6 +417,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				446EE9602139DC6900F639AA /* EventListCell.swift in Sources */,
 				446EE95B2139B8B700F639AA /* SignUpViewController.swift in Sources */,
 				446EE9552139B3A900F639AA /* User.swift in Sources */,
 				446EE9532139B10000F639AA /* LoginViewController.swift in Sources */,
