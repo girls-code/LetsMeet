@@ -9,26 +9,25 @@
 import UIKit
 import Parse
 
-<<<<<<< HEAD
-class Event {
+
+class Event: PFObject {
     var createdBy: PFUser
     var dateOfEvent: Date
-    var description: String
+    var eventDescription: String
     var typeOfEvent: String
     var locationEvent: CLLocation
     
-    init(createdBy: PFUser, dateOfEvent: Date, description: String, typeOfEvent: String, locationEvent: CLLocation) {
+    init(createdBy: PFUser, dateOfEvent: Date, eventDescription: String, typeOfEvent: String, locationEvent: CLLocation) {
         self.createdBy = createdBy
         self.dateOfEvent = dateOfEvent
-        self.description = description
+        self.eventDescription = eventDescription
         self.typeOfEvent = typeOfEvent
         self.locationEvent = locationEvent
+        super.init()
+    }
+    
+    func newEvent(){
         
     }
-=======
-
-class Event: PFObject {
-
->>>>>>> c7053c4801aba729757b8bf95630374d8c0a267e
 }
 

@@ -19,8 +19,7 @@ class User: PFUser {
     @NSManaged var profilePic:PFFile
     @NSManaged var classes:[String]
     @NSManaged var followers:[String] //we can save an array of user's id's, not the whole user objects lol
-//    @NSManaged var events:[]
-    
+    @NSManaged var events: [Event: PFObject]
 
     override init() {
         super.init()
